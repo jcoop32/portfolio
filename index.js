@@ -16,21 +16,50 @@ contact interactions:
 //project container
 const $projectContainer = $('<div>').attr('id', 'project-container'); //project section container
 //project 1 container
-const $landscaperBrowserProject = $('<div>').attr('id', 'landscaper-container'); //main conatiner
-const $project1Img = $('<img>').appendTo($landscaperBrowserProject); //img container
-const $project1Description = $('<p>').appendTo($landscaperBrowserProject); //text container
-//project 2 container
-const $landscaperTerminalProject = $('<div>').attr(
-  'id',
-  'landscaperTerminal-container'
-);
-const $project2Img = $('<img>').appendTo($landscaperTerminalProject);
-const $project2Description = $('<p>').appendTo($landscaperTerminalProject);
+const $landscaperBrowserProject = $('<div>')
+  .attr('id', 'landscaper-container')
+  .addClass('project-item'); //main conatiner
+const $p1ImgContainer = $('<div>') //img container
+  .attr('id', 'p1ImgContainer')
+  .addClass('project-img-container')
+  .appendTo($landscaperBrowserProject);
+const $project1Img = $('<img>')
+  .appendTo($p1ImgContainer)
+  .addClass('project-img'); //img container
+const $project1Description = $('<p>')
+  .appendTo($landscaperBrowserProject)
+  .addClass('project-p'); //text container
 
 //project 2 container
-const $toDoListProject = $('<div>').attr('id', 'todo-list-container');
-const $project3Img = $('<img>').appendTo($toDoListProject);
-const $project3Description = $('<p>').appendTo($toDoListProject);
+const $landscaperTerminalProject = $('<div>')
+  .attr('id', 'landscaperTerminal-container')
+  .addClass('project-item');
+const $p12mgContainer = $('<div>')
+  .attr('id', 'p1ImgContainer')
+  .addClass('project-img-container')
+  .appendTo($landscaperTerminalProject);
+const $project2Img = $('<img>')
+  .appendTo($p12mgContainer)
+  .addClass('project-img');
+const $project2Description = $('<p>')
+  .appendTo($landscaperTerminalProject)
+  .addClass('project-p');
+
+//project 2 container
+const $toDoListProject = $('<div>')
+  .attr('id', 'todo-list-container')
+  .addClass('project-item');
+const $p3ImgContainer = $('<div>')
+  .attr('id', 'p1ImgContainer')
+  .addClass('project-img-container')
+  .appendTo($toDoListProject);
+const $project3Img = $('<img>')
+  .appendTo($p3ImgContainer)
+  .addClass('project-img');
+const $project3Description = $('<p>')
+  .appendTo($toDoListProject)
+  .addClass('project-p')
+  .text('description');
 
 //displays project section
 function displayProjects() {
