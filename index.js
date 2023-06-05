@@ -26,9 +26,17 @@ const $p1ImgContainer = $('<div>') //img container
 const $project1Img = $('<img>')
   .appendTo($p1ImgContainer)
   .addClass('project-img'); //img container
+const $p1InfoContainer = $('<div>')
+  .addClass('project-info')
+  .appendTo($landscaperBrowserProject);
 const $project1Description = $('<p>')
-  .appendTo($landscaperBrowserProject)
+  .appendTo($p1InfoContainer)
+  .text('description')
   .addClass('project-p'); //text container
+const $project1Btn = $('<button>')
+  .appendTo($p1InfoContainer)
+  .addClass('project-btn')
+  .text('Go');
 
 //project 2 container
 const $landscaperTerminalProject = $('<div>')
@@ -41,11 +49,19 @@ const $p12mgContainer = $('<div>')
 const $project2Img = $('<img>')
   .appendTo($p12mgContainer)
   .addClass('project-img');
+const $p2InfoContainer = $('<div>')
+  .addClass('project-info')
+  .appendTo($landscaperTerminalProject);
 const $project2Description = $('<p>')
-  .appendTo($landscaperTerminalProject)
+  .appendTo($p2InfoContainer)
+  .text('description')
   .addClass('project-p');
+const $project2Btn = $('<button>')
+  .appendTo($p2InfoContainer)
+  .addClass('project-btn')
+  .text('Go');
 
-//project 2 container
+//project 3 container
 const $toDoListProject = $('<div>')
   .attr('id', 'todo-list-container')
   .addClass('project-item');
@@ -56,10 +72,21 @@ const $p3ImgContainer = $('<div>')
 const $project3Img = $('<img>')
   .appendTo($p3ImgContainer)
   .addClass('project-img');
+const $p3InfoContainer = $('<div>')
+  .addClass('project-info')
+  .appendTo($toDoListProject);
+const $project3Title = $('<h3>')
+  .appendTo($p3InfoContainer)
+  .addClass('project-h3')
+  .text('ToDo List');
 const $project3Description = $('<p>')
-  .appendTo($toDoListProject)
+  .appendTo($p3InfoContainer)
   .addClass('project-p')
   .text('description');
+const $project3Btn = $('<button>')
+  .appendTo($p3InfoContainer)
+  .addClass('project-btn')
+  .text('Go');
 
 //displays project section
 function displayProjects() {
