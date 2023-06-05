@@ -1,7 +1,7 @@
 #ul-nav-bar {
   display: flex;
+  /* position: fixed; */
   flex-direction: row;
-  /* gap: 500px; */
   justify-content: space-around;
 }
 li {
