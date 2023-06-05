@@ -7,60 +7,78 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="index.js"></script>
-    <title>Joshua Cooper</title>
+    <title>Projects</title>
   </head>
   <body>
     <!--nav bar-->
     <!--https://www.javatpoint.com/html-nav-tag-->
     <section>
-      <nav id="nav-bar">
-        <ul id="ul-nav-bar">
-          <li id="home-list-item"><a href="index.html" id="home-link">Home</a></li>
-          <li id="about-list-item"><a href="about.html" id="about-link">About</a></li>
-          <li id="projects-list-item">
-            <a href="projects.html" id="project-link">Projects</a>
-          </li>
-          <li id="contact-list-item">
-            <a href="contact.html" id="contact-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <ul id="ul-nav-bar">
+        <li id="home-list-item">
+          <a href="index.html" id="home-link">Home</a>
+        </li>
+        <li id="about-list-item">
+          <a href="about.html" id="about-link">About</a>
+        </li>
+        <li id="projects-list-item">
+          <a href="projects.html" id="project-link">Projects</a>
+        </li>
+        <li id="contact-list-item">
+          <a href="contact.html" id="contact-link">Contact</a>
+        </li>
+      </ul>
     </section>
     <hr />
     <div id="project-title">
       <h2>Projects</h2>
     </div>
     <div id="project-container">
-        <div id="landscaper-container" class="project-item">
-            <div id="p1ImgContainer" class="project-img-container">
-                <img class="project-img">
-            </div>
-            <div class="project-info">
-                <h3 class="project-h3">Landscaper Browser</h3>
-                <p class="project-p">Description</p>
-                <button class="project-btn">View</button>
-            </div>
+      <!--project 1-->
+      <div id="landscaper-container" class="project-item">
+        <div id="p1ImgContainer" class="project-img-container">
+          <img class="project-img" src="/images/landscaperBrowser.png" />
         </div>
-        <div id="landscaperTerminal-container" class="project-item">
-            <div id="p2ImgContainer" class="project-img-container">
-                <img class="project-img">
-            </div>
-            <div class="project-info">
-                <h3 class="project-h3">Landscaper Terminal</h3>
-                <p class="project-p">Description</p>
-                <button class="project-btn">View</button>
-            </div>
+        <div class="project-info">
+          <h3 class="project-h3">Landscaper: Browser Edition</h3>
+          <p class="project-p" id="project1-description">
+            For this project, I needed to take my idea from the terminal and
+            bring it to the Browser. In This Game the goal is to make $10,000
+            and unlocked each tool. You first start off with just your teeth and
+            can make your way up to more efficient robots!
+          </p>
+          <button class="project-btn" id="btn1">View1</button>
         </div>
-        <div id="todo-list-container" class="project-item">
-            <div id="p3ImgContainer" class="project-img-container">
-                <img class="project-img">
-            </div>
-            <div class="project-info">
-                <h3 class="project-h3">ToDo List</h3>
-                <p class="project-p">Description</p>
-                <button class="project-btn">View</button>
-            </div>
+      </div>
+      <!--project 2-->
+      <div id="landscaperTerminal-container" class="project-item">
+        <div id="p2ImgContainer" class="project-img-container">
+          <img class="project-img" src="/images/landscaperTerminal.png" />
         </div>
+        <div class="project-info">
+          <h3 class="project-h3">Landscaper: Terminal Edition</h3>
+          <p class="project-p" id="project2-description">
+            In this game the goal is to make $10,000 and unlocked each tool. You
+            first start off with just your teeth and can make your way up to
+            more efficient tools to earn more money!
+          </p>
+          <button class="project-btn" id="btn2">View2</button>
+        </div>
+      </div>
+      <!--project 3-->
+      <div id="todo-list-container" class="project-item">
+        <div id="p3ImgContainer" class="project-img-container">
+          <img class="project-img" src="/images/todolist.png" />
+        </div>
+        <div class="project-info">
+          <h3 class="project-h3">ToDo List</h3>
+          <p class="project-p" id="project3-description">
+            For this project, I wanted to create a To Do program to solidify the
+            skills I learned in Week 1 of the Bootcamp. This is a terminal based
+            program and I still have some features I want to add in the future!
+          </p>
+          <button class="project-btn" id="btn3">View</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
