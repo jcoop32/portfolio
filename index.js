@@ -13,7 +13,7 @@ contact interactions:
 check in on thurs
 */
 
-//project container
+const $projectDiv = $('.project-img-container');
 
 $(() => {
   //project descriptions
@@ -40,15 +40,20 @@ $(() => {
     $(this).removeClass();
   });
 
+  $('.project-img-container').on('click', function () {
+    let currentDiv = $(this).attr('id');
+    $(this).addClass('project-img-hover');
+  });
+
   //fucntion for clicking btn
   $btn1.on('click', () => {
-    $project1Description.toggle('slow');
+    $project1Description.slideToggle('slow');
   });
   $btn2.on('click', () => {
-    $project2Description.toggle('slow');
+    $project2Description.slideToggle('slow');
   });
   $btn3.on('click', () => {
-    $project3Description.toggle('slow');
+    $project3Description.slideToggle('slow');
   });
 
   //function for hovering over contact icons

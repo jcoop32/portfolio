@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- <meta charset="UTF-8" /> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="index.js"></script>
     <title>Joshua Cooper</title>
@@ -12,35 +12,42 @@
   <body>
     <!--nav bar-->
     <!--https://www.javatpoint.com/html-nav-tag-->
-    <section>
-      <ul id="ul-nav-bar">
-        <li id="home-list-item">
-          <a href="index.html" id="home-link">Home</a>
-        </li>
-        <li id="about-list-item">
-          <a href="about.html" id="about-link">About</a>
-        </li>
-        <li id="projects-list-item">
-          <a href="projects.html" id="project-link">Projects</a>
-        </li>
-        <li id="contact-list-item">
-          <a href="contact.html" id="contact-link">Contact</a>
-        </li>
-      </ul>
-    </section>
-
-    <hr />
+    <div id="nav-bar">
+      <div id="container-home"></div>
+      <div id="item-div">
+        <ul id="ul-nav-bar">
+          <li id="home-list-item">
+            <a href="index.html" id="home-link">Home</a>
+          </li>
+          <li id="about-list-item">
+            <a href="about.html" id="about-link">About</a>
+          </li>
+          <li id="projects-list-item">
+            <a href="projects.html" id="project-link">Projects</a>
+          </li>
+          <li id="contact-list-item">
+            <a href="contact.html" id="contact-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!--greeting container-->
     <div id="greeting-container" class="greeting">
       <!--front text container-->
       <div id="front-text-container">
-        <h1 id="greeting-text">Greeting message</h1>
+        <h1 id="greeting-text">Hello, I'm Josh.</h1>
+        <p>A Web Developer</p>
       </div>
       <!--image container-->
       <div id="fp-img-container">
         <img id="img-fp" />
       </div>
     </div>
+
+    <img
+      src="https://i.pinimg.com/originals/3c/98/99/3c98994b7e862005caad479da0b33366.jpg"
+      width="600px"
+    />
   </body>
 </html>

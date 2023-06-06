@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="index.js"></script>
     <title>Contact</title>
   </head>
-  <body>
+  <body class="gradient-background">
     <!--nav bar-->
     <!--https://www.javatpoint.com/html-nav-tag-->
-    <section>
-      <ul id="ul-nav-bar">
-        <li id="home-list-item">
-          <a href="index.html" id="home-link">Home</a>
-        </li>
-        <li id="about-list-item">
-          <a href="about.html" id="about-link">About</a>
-        </li>
-        <li id="projects-list-item">
-          <a href="projects.html" id="project-link">Projects</a>
-        </li>
-        <li id="contact-list-item">
-          <a href="contact.html" id="contact-link">Contact</a>
-        </li>
-      </ul>
-    </section>
+    <div id="nav-bar">
+      <div id="container-home"></div>
+      <div id="item-div">
+        <ul id="ul-nav-bar">
+          <li id="home-list-item">
+            <a href="index.html" id="home-link">Home</a>
+          </li>
+          <li id="about-list-item">
+            <a href="about.html" id="about-link">About</a>
+          </li>
+          <li id="projects-list-item">
+            <a href="projects.html" id="project-link">Projects</a>
+          </li>
+          <li id="contact-list-item">
+            <a href="contact.html" id="contact-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <hr />
 
@@ -41,7 +44,10 @@
         <a href="https://www.linkedin.com/in/joshua-cooper11/" target="_blank"
           ><img src="/images/linkedin.svg" class="icon"
         /></a>
-        <p>joshuacooper332@gmail.com</p>
+        <!--https://www.tutorialspoint.com/html/html_email_links.htm-->
+        <a href="mailto: joshuacooper332@gmail.com"
+          ><img src="/images/envelope-fill.svg"
+        /></a>
       </div>
     </div>
   </body>
