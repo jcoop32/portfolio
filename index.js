@@ -57,6 +57,16 @@ $(() => {
     $project3Description.slideToggle('slow');
   });
 
+  $('.project-h3')
+    .on('mouseenter', function () {
+      $(this).removeClass();
+      $(this).addClass('hoverH3');
+    })
+    .on('mouseleave', function () {
+      $(this).removeClass();
+      $(this).addClass('.project-h3');
+    });
+
   //function for user hover over view description btn
   $('.project-btn')
     .on('mouseenter', function () {
