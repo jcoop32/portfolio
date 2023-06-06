@@ -167,10 +167,10 @@ li {
   padding: 15px;
 }
 .hoverOverIconLinked {
-  background: #D5C67A;
+  background: white;
   border-radius: 2px;
 }
 .hoverOverIconGit {
-  background: #D5C67A;
+  background: white;
   border-radius: 100px;
 }
