@@ -24,7 +24,7 @@ To achieve the look I had come up with I needed to first create a rough draft of
 
 ### 5. Style page with CSS
 
-For me, this was the hardest part of the portfolio becuase I am horrible with picking color schemes and setting a certain style to a page. I was using [coolor.co](https://coolors.co/) to find different color schemes, but didn't know which colors looked best for different parts of the pages.
+For me, this was the hardest part of the portfolio becuase I am horrible with picking color schemes and setting a certain style to a page. I was using [coolor.co](https://coolors.co/) to find different color schemes, but didn't know which colors looked best for different parts of the pages. While coloring and styling was difficult, I also had a little bit of trouble when it came to positioning my pages. I mostly used flex for my display type, which made it very easy to position things the way I envisioned. Whenever I did get a bug I used this chrome extension called [Pesticide](https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi) which saved me a lot of time and headaches, I highly recommend it
 
 ### 6. Make responsive to all devices
 
