@@ -12,7 +12,7 @@ When I first came up with the wireframe I was trying to decide what I should cre
 
 ### 3. Brainstorm the functionalities I want to add
 
-For me Brainstorming 3 different types of interactions was kind of difficult. I of course used the `.on()` and `.hover()`, which is deprecated and replaced with `.on('mouseenter')` and `.on('mouseleave)`, but figuring out the third interaction was tough for me. I then talked with my instructor Matt and he came up with a cool idea to `.toggle()` the project description.
+For me Brainstorming 3 different types of interactions was kind of difficult. I of course used the `.on()` and `.hover()`, which is deprecated and now replaced with `.on('mouseenter')` and `.on('mouseleave)`, but figuring out the third interaction was tough for me. I then talked with my instructor Matt and he came up with a cool idea to `.toggle()` the project description.
 
 ### 4. Create the HTML and Javascript/jQuery
 
@@ -31,4 +31,4 @@ For me, this was the hardest part of the portfolio becuase I am horrible with pi
 ## Problems encountered
 
 - .on() not working properly
-- .hover() depreciated
+- .hover() deprecated
