@@ -1,15 +1,13 @@
 /*
 nav-bar interactions:
-.hover() -> when user hovers over a list item -> change highlight the list item
-.on('click) -> when user clicks on an item -> scroll down to selected section 
+.hover() -> when user hovers over a list item -> change highlight the list item✅
 
 project interactions:
 .hover() -> when user hovers over a project container, highlight conatiner
-.on('click') -> when user clicks on view description, description appears
+.on('click') -> when user clicks on view description, description appears ✅
 
 contact interactions:
 .hover() -> when user hovers over button change background color to either black or white depending on default color
-.on('click') -> when user clicks on a button, open page in new tab
 
 
 check in on thurs
@@ -18,27 +16,47 @@ check in on thurs
 //project container
 
 $(() => {
-  //   const $projectDescription = $('#project1-description');
+  //project descriptions
   const $project1Description = $('#project1-description');
   const $project2Description = $('#project2-description');
   const $project3Description = $('#project3-description');
-  const $projectBtn = $('button');
+
+  //hiding description by default
   $project1Description.hide();
   $project2Description.hide();
   $project3Description.hide();
-  $projectBtn.on('click', () => {
-    let currentBtn = $('.project-btn').attr('id');
-    console.log(currentBtn);
-    switch (currentBtn) {
-      case 'btn1':
-        $project1Description.toggle('slow');
-        break;
-      case 'btn2':
-        $project2Description.toggle('slow');
-        break;
-      case 'btn3':
-        $project3Description.toggle('slow');
-        break;
-    }
+
+  //project view description buttons
+  const $btn1 = $('#btn1');
+  const $btn2 = $('#btn2');
+  const $btn3 = $('#btn3');
+
+  //on 'hover' for navbar items
+  $('a').on('mouseenter', function () {
+    $(this).removeClass();
+    $(this).addClass('hoverOver');
+  });
+  $('a').on('mouseleave', function () {
+    $(this).removeClass();
+  });
+
+  //fucntion for clicking btn
+  $btn1.on('click', () => {
+    $project1Description.toggle('slow');
+  });
+  $btn2.on('click', () => {
+    $project2Description.toggle('slow');
+  });
+  $btn3.on('click', () => {
+    $project3Description.toggle('slow');
+  });
+
+  //function for hovering over contact icons
+  $('.icon').on('mouseenter', function () {
+    $(this).removeClass();
+    $(this).addClass('hoverOverIcon');
+  });
+  $('.icon').on('mouseleave', function () {
+    $(this).removeClass();
   });
 });

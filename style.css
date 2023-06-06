@@ -13,6 +13,14 @@ section {
   justify-content: center;
   align-content: center;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+.hoverOver {
+  text-decoration: underline;
+  color: crimson;
+}
 li {
   color: black;
   list-style: none;
@@ -83,4 +91,13 @@ li {
   align-content: center;
   width: 70%;
   margin-bottom: 10px;
+}
+#contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.hoverOverIcon {
+  background: lightgrey;
+  border-radius: 2px;
 }
