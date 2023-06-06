@@ -32,13 +32,14 @@ $(() => {
   const $btn3 = $('#btn3');
 
   //on 'hover' for navbar items
-  $('a')
+  $('.nav-text')
     .on('mouseenter', function () {
       $(this).removeClass();
       $(this).addClass('hoverOver');
     })
     .on('mouseleave', function () {
       $(this).removeClass();
+      $(this).addClass('nav-text');
     });
 
   // $('.project-img-container').on('click', function () {
@@ -57,6 +58,7 @@ $(() => {
     $project3Description.slideToggle('slow');
   });
 
+  //highlight project titles
   $('.project-h3')
     .on('mouseenter', function () {
       $(this).removeClass();
