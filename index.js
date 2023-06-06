@@ -32,18 +32,19 @@ $(() => {
   const $btn3 = $('#btn3');
 
   //on 'hover' for navbar items
-  $('a').on('mouseenter', function () {
-    $(this).removeClass();
-    $(this).addClass('hoverOver');
-  });
-  $('a').on('mouseleave', function () {
-    $(this).removeClass();
-  });
+  $('a')
+    .on('mouseenter', function () {
+      $(this).removeClass();
+      $(this).addClass('hoverOver');
+    })
+    .on('mouseleave', function () {
+      $(this).removeClass();
+    });
 
-  $('.project-img-container').on('click', function () {
-    let currentDiv = $(this).attr('id');
-    $(this).addClass('project-img-hover');
-  });
+  // $('.project-img-container').on('click', function () {
+  //   let currentDiv = $(this).attr('id');
+  //   $(this).addClass('project-img-hover');
+  // });
 
   //fucntion for clicking btn
   $btn1.on('click', () => {
@@ -56,12 +57,30 @@ $(() => {
     $project3Description.slideToggle('slow');
   });
 
+  //function for user hover over view description btn
+  $('.project-btn')
+    .on('mouseenter', function () {
+      $(this).removeClass();
+      $(this).addClass('btn-hover');
+    })
+    .on('mouseleave', function () {
+      $(this).removeClass();
+      $(this).addClass('project-btn');
+    });
+
   //function for hovering over contact icons
-  $('.icon').on('mouseenter', function () {
-    $(this).removeClass();
-    $(this).addClass('hoverOverIcon');
-  });
-  $('.icon').on('mouseleave', function () {
-    $(this).removeClass();
-  });
+  $('.icon')
+    .on('mouseenter', function () {
+      $(this).removeClass();
+      let name = $(this).attr('name');
+      if (name === 'Github') {
+        $(this).addClass('hoverOverIconGit');
+      } else {
+        $(this).addClass('hoverOverIconLinked');
+      }
+    })
+    .on('mouseleave', function () {
+      $(this).text('');
+      $(this).removeClass();
+    });
 });

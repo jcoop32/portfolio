@@ -65,13 +65,16 @@ li {
 }
 #about-container {
   width: 50%;
+  padding: 15px;
 }
 #project-title {
   text-align: justify;
+  padding-left: 15px;
+
 }
 #project-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 }
@@ -93,6 +96,10 @@ li {
   align-items: center;
 }
 .project-img-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   width: 90%;
   height: 100%;
   cursor: pointer;
@@ -101,10 +108,9 @@ li {
   box-shadow: 10px;
 }
 .project-img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 800%;
   border-radius: 10px;
-  image-resolution: from-image;
 }
 .project-h3 {
   text-align: justify;
@@ -121,13 +127,33 @@ li {
   align-content: center;
   width: 60%;
   margin-bottom: 10px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  background-color: white;
+}
+.btn-hover{
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  background-color: black;
+  color: white;
 }
 #contact-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.hoverOverIcon {
-  background: black;
+.contact-text{
+  padding: 15px;
+}
+.hoverOverIconLinked {
+  background: #D5C67A;
   border-radius: 2px;
+}
+.hoverOverIconGit {
+  background: #D5C67A;
+  border-radius: 100px;
 }
