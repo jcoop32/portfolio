@@ -1,21 +1,16 @@
-element {
-  --bg-cream: #fefae0
-  --text-dark-green: #283618
-  --text-light-green: #606c38
-  --text-dark-brown: #bc6c25
-  --text-light-brown: #dda15e
+body {
+  background-color: #dccdba;
 }
-
-body{
-  background-color: #DCCDBA;
-}
-#nav-bar{
+#nav-bar {
   display: flex;
   flex-direction: row;
-  background-color: #594E3B;
+  background-color: #594e3b;
   border-radius: 20px;
 }
-#item-div{
+h2 {
+  font-family: 'Rock Salt', cursive;
+}
+#item-div {
   width: 100%;
   display: flex;
   justify-content: end;
@@ -25,22 +20,22 @@ body{
   flex-direction: row;
   justify-content: space-evenly;
   height: 40px;
-  align-content: end;
-  align-self: flex-end;
   align-items: center;
   width: 90%;
 }
-#container-home{
-  width: 50%;
+#container-home {
+  width: 70%;
 }
 a {
   text-decoration: none;
   color: black;
 }
-.nav-text{
-  color: #DCCDBA;
+.nav-text {
+  font-family: 'Rock Salt', cursive;
+  color: #dccdba;
 }
 .hoverOver {
+  font-family: 'Rock Salt', cursive;
   color: red;
 }
 li {
@@ -53,8 +48,13 @@ li {
   margin-top: 60px;
 }
 #greeting-text {
-  font-size: 50px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 40px;
   color: black;
+}
+.font {
+  font-family: 'Rock Salt', cursive;
+  font-size: 20px;
 }
 #front-text-container {
   text-align: center;
@@ -63,7 +63,7 @@ li {
   border: 1px solid black;
   border-radius: 10px;
 }
-#about-title{
+#about-title {
   text-align: start;
 }
 #about-container {
@@ -74,7 +74,8 @@ li {
   justify-content: center;
   align-items: center;
 }
-#about-text{
+#about-text {
+  font-size: 22px;
   width: 50%;
   line-height: 28px;
   text-align: center;
@@ -82,11 +83,10 @@ li {
 #project-title {
   text-align: justify;
   padding-left: 15px;
-
 }
 #project-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -124,7 +124,7 @@ li {
   text-align: center;
   color: black;
 }
-.hoverH3{
+.hoverH3 {
   text-align: center;
   color: red;
 }
@@ -143,7 +143,7 @@ li {
   border: 0.5px solid black;
   background-color: white;
 }
-.btn-hover{
+.btn-hover {
   justify-content: center;
   align-content: center;
   width: 60%;
@@ -158,7 +158,7 @@ li {
   flex-direction: row;
   justify-content: space-around;
 }
-.contact-text{
+.contact-text {
   padding: 15px;
 }
 .hoverOverIconLinked {
@@ -171,45 +171,59 @@ li {
 }
 /* Responsiveness */
 
-@media (max-width: 670px){
-  .greeting{
+@media (max-width: 670px) {
+  .greeting {
     display: flex;
     flex-direction: column;
   }
-  #fp-img-container{
+  #ul-nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  #item-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  #container-home {
+    width: 0px;
+  }
+  #fp-img-container {
     margin: 0 auto;
   }
-  #about-text{
+  #about-text {
     width: 100%;
     font-size: medium;
   }
-  #project-title{
+  #project-title {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: medium;
   }
-  .project-h3{
+  .project-h3 {
     font-size: medium;
   }
-  .project-item{
+  .project-item {
     width: 85%;
-  
   }
-  .link-img{
+  .link-img {
     display: flex;
   }
   /* .project-img-container{
     margin: 0 auto;
   } */
-  .project-p{
+  .project-p {
     text-align: center;
     width: 100%;
     font-size: small;
     margin-right: 20px;
     margin-top: -10px;
   }
-  .project-img{
+  .project-img {
     width: 50%;
     margin: 0 auto;
   }
@@ -218,12 +232,12 @@ li {
     text-align: center;
     color: black;
   }
-  .hoverH3{
+  .hoverH3 {
     text-align: center;
     font-size: medium;
     color: red;
   }
-  .project-btn{
+  .project-btn {
     justify-content: center;
     align-content: center;
     width: 45%;
@@ -233,7 +247,7 @@ li {
     background-color: white;
     font-size: x-small;
   }
-  .btn-hover{
+  .btn-hover {
     justify-content: center;
     align-content: center;
     width: 45%;
@@ -244,14 +258,14 @@ li {
     color: white;
     font-size: x-small;
   }
-  #contact-container{
+  #contact-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
-  .icon{
+  .icon {
     width: 48px;
   }
 }
