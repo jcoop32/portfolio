@@ -191,4 +191,41 @@ li {
   #fp-img-container{
     margin: 0 auto;
   }
+  .project-h3{
+    font-size: medium;
+  }
+  .project-item{
+    width: 85%;
+  
+  }
+  #about-text{
+    width: 100%;
+    font-size: medium;
+  }
+  .link-img{
+    display: flex;
+  }
+  .project-img-container{
+    margin: 0 auto;
+  }
+  .project-p{
+    text-align: center;
+    width: 100%;
+    font-size: small;
+    margin-right: 20px;
+  }
+  .project-img{
+    width: 50%;
+    margin: 0 auto;
+  }
+  #contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .icon{
+    width: 48px;
+  }
 }
