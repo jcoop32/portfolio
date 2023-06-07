@@ -67,7 +67,7 @@ li {
   text-align: start;
 }
 #about-container {
-  width: 100%;
+  width: 95%;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -91,8 +91,8 @@ li {
   align-items: center;
 }
 .project-item {
-  width: 550px;
-  height: 245px;
+  width: 33%;
+  height: 100%;
   border: 1px solid black;
   border-radius: 10px;
   margin: 10px;
@@ -113,11 +113,7 @@ li {
   align-content: center;
   align-items: center;
   width: 90%;
-  height: 100%;
   cursor: pointer;
-}
-.project-img-hover {
-  box-shadow: 10px;
 }
 .project-img {
   width: 80%;
@@ -125,16 +121,15 @@ li {
   border-radius: 10px;
 }
 .project-h3 {
-  text-align: justify;
+  text-align: center;
 
 }
 .hoverH3{
-  text-align: justify;
+  text-align: center;
   color: red;
 }
 .project-p {
   width: 85%;
-  height: 250px;
   text-align: justify;
   justify-content: center;
   align-content: center;
@@ -173,4 +168,27 @@ li {
 .hoverOverIconGit {
   background: white;
   border-radius: 100px;
+}
+/* Responsiveness */
+/* @media (max-width: 670px){
+  .project-btn{
+    font-size: 8px;
+  }
+  .btn-hover{
+    font-size: 15px;
+  }
+  .project-h3, .hoverH3{
+    font-size: 33%;
+    text-align: center;
+  }
+  
+} */
+@media (max-width: 670px){
+  .greeting{
+    display: flex;
+    flex-direction: column;
+  }
+  #fp-img-container{
+    margin: 0 auto;
+  }
 }

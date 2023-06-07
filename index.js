@@ -61,11 +61,11 @@ $(() => {
   //highlight project titles
   $('.project-h3')
     .on('mouseenter', function () {
-      $(this).removeClass();
+      $(this).removeClass('project-h3');
       $(this).addClass('hoverH3');
     })
     .on('mouseleave', function () {
-      $(this).removeClass();
+      $(this).removeClass('hoverH3');
       $(this).addClass('.project-h3');
     });
 
