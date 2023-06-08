@@ -129,6 +129,9 @@ li {
 .section > h2 {
   font-family: 'Times New Roman', Times, serif;
 }
+.link {
+  text-decoration: underline;
+}
 
 /* project page */
 #project-title {
