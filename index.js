@@ -2,15 +2,14 @@
 nav-bar interactions:
 .hover() -> when user hovers over a list item -> change highlight the list item✅
 
+about interactions:
+modal for bio -> open and close modal✅
+
 project interactions:
-.hover() -> when user hovers over a project container, highlight conatiner
 .on('click') -> when user clicks on view description, description appears ✅
 
 contact interactions:
-.hover() -> when user hovers over button change background color to either black or white depending on default color
-
-
-check in on thurs
+.hover() -> when user hovers over button change background color to either black or white depending on default color✅
 */
 
 $(() => {
@@ -71,7 +70,7 @@ $(() => {
       $(this).removeClass();
     });
 
-  //modal functions
+  //modal open and close functions
   function openModal() {
     $('#modal').css('display', 'block');
   }

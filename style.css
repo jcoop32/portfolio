@@ -109,6 +109,27 @@ li {
   line-height: 28px;
   text-align: center;
 }
+/* resume page */
+#resume-title {
+  margin-left: 20px;
+}
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bullet > li {
+  text-align: start;
+  list-style: circle;
+}
+.section {
+  text-align: center;
+}
+.section > h2 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 /* project page */
 #project-title {
   text-align: justify;
