@@ -28,7 +28,9 @@ For me, this was the hardest part of the portfolio becuase I am horrible with pi
 
 ### 6. Make responsive to all devices
 
-## Problems encountered
+In order for my portfolio to look good on more than one device I needed to make it repsonsive. I did this by using the `@media` queries in CSS. To start, I set the media query to change once the page was smaller than 670px or `max-width: 670px`. I used this size because I needed the screen size to be small. When I tested this out on my phone it was too small, so I increase the amount to 1024px just to be sure. After that, I started to make the site look more mobile friendly.
+
+<!-- ## Problems encountered
 
 - .on() not working properly
-- .hover() deprecated
+- .hover() deprecated -->

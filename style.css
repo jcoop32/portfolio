@@ -1,14 +1,15 @@
 body {
   background-color: #dccdba;
 }
+h2 {
+  font-family: 'Rock Salt', cursive;
+}
+/* home page */
 #nav-bar {
   display: flex;
   flex-direction: row;
   background-color: #594e3b;
   border-radius: 20px;
-}
-h2 {
-  font-family: 'Rock Salt', cursive;
 }
 #item-div {
   width: 100%;
@@ -63,6 +64,7 @@ li {
   border: 1px solid black;
   border-radius: 10px;
 }
+/* about page */
 .about-title {
   display: block;
   text-align: center;
@@ -107,6 +109,7 @@ li {
   line-height: 28px;
   text-align: center;
 }
+/* project page */
 #project-title {
   text-align: justify;
   padding-left: 15px;
@@ -180,6 +183,7 @@ li {
   background-color: black;
   color: white;
 }
+/* contact page */
 #contact-container {
   display: flex;
   flex-direction: row;
@@ -246,9 +250,6 @@ li {
   #project-container {
     height: 720px;
   }
-  /* .project-img-container{
-    margin: 0 auto;
-  } */
   .project-p {
     text-align: center;
     width: 100%;
