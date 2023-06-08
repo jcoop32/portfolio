@@ -8,6 +8,18 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Poiret+One&family=Poller+One&family=Rock+Salt&display=swap"
       rel="stylesheet"
     />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="images/Web 4/icons8-about-me-ios-16-16.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="images/Web 4/icons8-about-me-ios-16-32.png"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,18 +35,38 @@
       <div id="item-div">
         <ul id="ul-nav-bar">
           <li id="home-list-item">
-            <a href="index.html" id="home-link" class="nav-text">Home</a>
+            <a
+              href="index.html"
+              id="home-link"
+              class="nav-text"
+              draggable="false"
+              >Home</a
+            >
           </li>
           <li id="about-list-item">
-            <a href="about.html" id="about-link" class="nav-text">About</a>
+            <a
+              href="about.html"
+              id="about-link"
+              class="nav-text"
+              draggable="false"
+              >About</a
+            >
           </li>
           <li id="projects-list-item">
-            <a href="projects.html" id="project-link" class="nav-text"
+            <a
+              href="projects.html"
+              id="project-link"
+              class="nav-text"
+              draggable="false"
               >Projects</a
             >
           </li>
           <li id="contact-list-item">
-            <a href="contact.html" id="contact-link" class="nav-text"
+            <a
+              href="contact.html"
+              id="contact-link"
+              class="nav-text"
+              draggable="false"
               >Contact</a
             >
           </li>
@@ -43,17 +75,30 @@
     </div>
 
     <!--about section-->
-    <div id="about-container">
-      <h2 id="about-title">About Me</h2>
-      <p id="about-text">
-        Hello there! My name is Joshua Cooper. I'm a 20-year-old from the
-        vibrant city of Chicago. Currently, I am pursuing my passion for
-        technology and innovation by majoring in Computer Science. Ever since I
-        can remember, I've been captivated by the fascinating world of computers
-        and their limitless potential. The ability to create something from
-        scratch, to solve complex problems, and to make a positive impact on
-        people's lives through technology has always inspired me.
-      </p>
+    <div class="about-title">
+      <h2>About Me</h2>
+      <button class="modal-btns" id="open-modal">Click Me</button>
     </div>
+    <!--modal display-->
+    <div id="modal">
+      <div id="about-container">
+        <div id="modal-textbox">
+          <p id="about-text">
+            Hello there! My name is Joshua Cooper. I'm a 20-year-old from the
+            vibrant city of Chicago. Currently, I am pursuing my passion for
+            technology and innovation by majoring in Computer Science. Ever
+            since I can remember, I've been captivated by the fascinating world
+            of computers and their limitless potential. The ability to create
+            something from scratch, to solve complex problems, and to make a
+            positive impact on people's lives through technology has always
+            inspired me.
+          </p>
+          <div id="modal-footer">
+            <button id="close-modal" class="modal-btns">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end modal-->
   </body>
 </html>

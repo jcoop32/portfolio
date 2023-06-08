@@ -13,23 +13,9 @@ contact interactions:
 check in on thurs
 */
 
-const $projectDiv = $('.project-img-container');
-
 $(() => {
-  //project descriptions
-  const $project1Description = $('#project1-description');
-  const $project2Description = $('#project2-description');
-  const $project3Description = $('#project3-description');
-
   //hiding description by default
-  $project1Description.hide();
-  $project2Description.hide();
-  $project3Description.hide();
-
-  //project view description buttons
-  const $btn1 = $('#btn1');
-  const $btn2 = $('#btn2');
-  const $btn3 = $('#btn3');
+  $('.project-p').hide();
 
   //on 'hover' for navbar items
   $('.nav-text')
@@ -42,20 +28,9 @@ $(() => {
       $(this).addClass('nav-text');
     });
 
-  // $('.project-img-container').on('click', function () {
-  //   let currentDiv = $(this).attr('id');
-  //   $(this).addClass('project-img-hover');
-  // });
-
   //fucntion for clicking btn
-  $btn1.on('click', () => {
-    $project1Description.slideToggle('slow');
-  });
-  $btn2.on('click', () => {
-    $project2Description.slideToggle('slow');
-  });
-  $btn3.on('click', () => {
-    $project3Description.slideToggle('slow');
+  $('.project-btn').on('click', function () {
+    $(this).siblings('.project-p').slideToggle('slow');
   });
 
   //highlight project titles
@@ -95,4 +70,14 @@ $(() => {
       $(this).text('');
       $(this).removeClass();
     });
+
+  //modal functions
+  function openModal() {
+    $('#modal').css('display', 'block');
+  }
+  function closeModal() {
+    $('#modal').css('display', 'none');
+  }
+  $('#open-modal').on('click', openModal);
+  $('#close-modal').on('click', closeModal);
 });
