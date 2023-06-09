@@ -244,6 +244,12 @@ li {
     justify-content: space-evenly;
     gap: 10px;
   }
+  .nav-text {
+    font-size: small;
+  }
+  .hoverOver {
+    font-size: small;
+  }
   #item-div {
     display: flex;
     justify-content: center;
