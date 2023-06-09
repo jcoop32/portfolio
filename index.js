@@ -19,7 +19,6 @@ $(() => {
   //on 'hover' for navbar items
   $('.nav-text')
     .on('mouseenter', function () {
-      $(this).removeClass();
       $(this).addClass('hoverOver');
     })
     .on('mouseleave', function () {
@@ -35,7 +34,6 @@ $(() => {
   //highlight project titles
   $('.project-h3')
     .on('mouseenter', function () {
-      $(this).removeClass();
       $(this).addClass('hoverH3');
     })
     .on('mouseleave', function () {
@@ -46,7 +44,6 @@ $(() => {
   //function for user hover over view description btn
   $('.project-btn')
     .on('mouseenter', function () {
-      $(this).removeClass();
       $(this).addClass('btn-hover');
     })
     .on('mouseleave', function () {
@@ -57,7 +54,6 @@ $(() => {
   //function for hovering over contact icons
   $('.icon')
     .on('mouseenter', function () {
-      $(this).removeClass();
       let name = $(this).attr('name');
       if (name === 'Github') {
         $(this).addClass('hoverOverIconGit');
@@ -66,7 +62,6 @@ $(() => {
       }
     })
     .on('mouseleave', function () {
-      $(this).text('');
       $(this).removeClass();
     });
 
