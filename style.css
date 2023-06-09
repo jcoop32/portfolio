@@ -8,6 +8,7 @@ h2 {
 #nav-bar {
   display: flex;
   flex-direction: row;
+  position: sticky;
   background-color: #4a4e69;
   border-radius: 20px;
 }
@@ -242,7 +243,10 @@ li {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
   }
   .nav-text {
     font-size: small;
