@@ -118,10 +118,14 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -75px;
 }
 .bullet > li {
   text-align: start;
   list-style: circle;
+}
+#city-resume {
+  margin-top: -20px;
 }
 .section {
   text-align: center;
