@@ -1,5 +1,8 @@
 body {
   background-color: #f2e9e4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h2 {
   font-family: 'Rock Salt', cursive;
@@ -219,7 +222,9 @@ li {
 #contact-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 150px;
 }
 .contact-text {
   padding: 15px;
@@ -231,6 +236,11 @@ li {
 .hoverOverIconGit {
   background: white;
   border-radius: 100px;
+}
+
+footer{
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 /* Responsiveness */
 
