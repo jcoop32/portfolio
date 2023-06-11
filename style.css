@@ -11,7 +11,6 @@ h2 {
 #nav-bar {
   display: flex;
   flex-direction: row;
-  position: sticky;
   background-color: #4a4e69;
   border-radius: 20px;
 }
@@ -65,7 +64,6 @@ li {
   text-align: center;
 }
 #img-fp {
-
   border-radius: 200px;
 }
 /* about page */
