@@ -259,10 +259,10 @@ footer{
     gap: 20px;
   }
   .nav-text {
-    font-size: small;
+    font-size: medium;
   }
   .hoverOver {
-    font-size: small;
+    font-size: medium;
   }
   #item-div {
     display: flex;
@@ -344,14 +344,14 @@ footer{
     color: #f2e9e4;
     font-size: x-small;
   }
-  #contact-container {
+  /* #contact-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-  }
-  .icon {
+  } */
+  /* .icon {
     width: 48px;
-  }
+  } */
 }
