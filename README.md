@@ -1,4 +1,5 @@
 # Portfolio
+[Link to live site.](https://joshcooper.netlify.app/index.html)
 
 ## Process of Creating and Building My Portfolio
 
