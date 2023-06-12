@@ -49,22 +49,28 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /* justify-content: end; */
+  /* gap: 100px; */
   margin-top: 60px;
 }
 #greeting-text {
   font-family: 'Rock Salt', cursive;
   font-size: 40px;
-  color: black;
 }
 .font {
+  color: #4a4e69;
   font-family: 'Rock Salt', cursive;
   font-size: 20px;
 }
 #front-text-container {
   text-align: center;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
 }
 #img-fp {
   border-radius: 200px;
+  width: 300px;
 }
 /* about page */
 .about-title {
